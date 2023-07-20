@@ -1,0 +1,50 @@
+{% load static %}
+<nav class="sidebar-nav">
+    <ul id="sidebarnav">
+      
+        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                href="{% url 'admin1' %}" aria-expanded="false"><i class="mdi me-2 mdi-gauge"></i><span
+                    class="hide-menu">Dashboard</span></a></li> 
+        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                href="{% url 'agents_urls' %}" aria-expanded="false">
+                <i class="mdi me-2 mdi-account-check"></i><span class="hide-menu">Add Agents</span></a>
+        </li>
+        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+            href="{% url 'readme_urls' %}" aria-expanded="false">
+            <i class="mdi me-2 mdi-account-check"></i><span class="hide-menu">Add ReadMe</span></a>
+    </li>
+    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+        href="{% url 'property_urls' %}" aria-expanded="false">
+        <i class="mdi me-2 mdi-account-check"></i><span class="hide-menu">Add Property</span></a>
+</li>
+<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+    href="{% url 'service_urls' %}" aria-expanded="false">
+    <i class="mdi me-2 mdi-account-check"></i><span class="hide-menu">Add Services</span></a>
+</li>
+<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+    href="{% url 'gallery_urls' %}" aria-expanded="false">
+    <i class="mdi me-2 mdi-account-check"></i><span class="hide-menu">Add property Images</span></a>
+</li>
+
+<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+    href="{% url 'comment_urls' %}" aria-expanded="false">
+    <i class="mdi me-2 mdi-account-check"></i><span class="hide-menu">Add Comments</span></a>
+</li>  
+
+<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+    href="{% url 'selled_urls' %}" aria-expanded="false">
+    <i class="mdi me-2 mdi-account-check"></i><span class="hide-menu">Selled property</span></a>
+</li> 
+
+<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+    href="{% url 'rental_urls' %}" aria-expanded="false">
+    <i class="mdi me-2 mdi-account-check"></i><span class="hide-menu">Rental Items </span></a>
+</li> 
+<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+    href="{% url 'appointment_urls' %}" aria-expanded="false">
+    <i class="mdi me-2 mdi-account-check"></i><span class="hide-menu">Appintment of customers </span></a>
+</li> 
+
+    </ul>
+
+</nav>

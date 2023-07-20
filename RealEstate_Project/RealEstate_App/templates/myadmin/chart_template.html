@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Include the Chart.js library -->
+  <script src="path/to/chart.js"></script>
+</head>
+<body>
+  <canvas id="myChart"></canvas>
+
+  <script>
+    // Fetch the data passed from the view
+    var customers =  customers|safe ;
+
+    // Process the data and create the chart
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: customers.map(customer => customer.name),
+            datasets: [{
+                label: 'Customer Count',
+                data: customers.map(customer => customer.count),
+                backgroundColor: 'rgba(0, 123, 255, 0.5)',
+                borderColor: 'rgba(0, 123, 255, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            // Configure chart options as per your requirements
+        }
+    });
+  </script>
+</body>
+</html>
